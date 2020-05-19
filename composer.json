@@ -1,0 +1,18 @@
+{
+    "name": "iam-adty/php-config",
+    "description": "To define config property",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bagus A Priambada",
+            "email": "iam.adty@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "IamAdty\\": "src/"
+        }
+    }
+}
