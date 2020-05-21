@@ -7,8 +7,12 @@ trait ConfigTrait
         parent::__construct($this->name, $value);
     }
 
-    public static function set($value = null)
+    /**
+     * @param mixed|null $value
+     */
+    public static function set()
     {
-        return new self($value);
+        $args = func_get_args();
+        return new self($args[0] ?? null);
     }
 }

@@ -14,5 +14,8 @@
         "psr-4": {
             "IamAdty\\": "src/"
         }
+    },
+    "require-dev": {
+        "kint-php/kint": "^3.3"
     }
 }

@@ -31,8 +31,13 @@ class Config
         return $this->value;
     }
 
-    public static function create($name = '', $value = null)
+    /**
+     * @param string $name
+     * @param mixed|null $value
+     */
+    public static function set()
     {
-        return new self($name, $value);
+        $args = func_get_args();
+        return new self($args[0] ?? "", $args[1] ?? null);
     }
 }
