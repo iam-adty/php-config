@@ -6,4 +6,9 @@ trait DefinedConfigTrait
     {
         parent::__construct($this->name, $this->value);
     }
+
+    public static function set()
+    {
+        return new self();
+    }
 }

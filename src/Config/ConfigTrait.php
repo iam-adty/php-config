@@ -7,8 +7,8 @@ trait ConfigTrait
         parent::__construct($this->name, $value);
     }
 
-    public function set($value = null)
+    public static function set($value = null)
     {
-        $this->value = $value;
+        return new self($value);
     }
 }

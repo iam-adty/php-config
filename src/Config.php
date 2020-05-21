@@ -30,4 +30,9 @@ class Config
     {
         return $this->value;
     }
+
+    public static function create($name = '', $value = null)
+    {
+        return new self($name, $value);
+    }
 }
