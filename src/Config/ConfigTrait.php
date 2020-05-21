@@ -6,4 +6,9 @@ trait ConfigTrait
     {
         parent::__construct($this->name, $value);
     }
+
+    public function set($value = null)
+    {
+        $this->value = $value;
+    }
 }
