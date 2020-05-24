@@ -2,8 +2,8 @@
 
 class Config
 {
-    public $name = '';
-    public $value = null;
+    protected $name = '';
+    protected $value = null;
 
     public function __construct($name = '', $value = null)
     {
