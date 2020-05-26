@@ -6,8 +6,8 @@ trait ConfigCollectionTrait
 {
     public function setConfig(Config $config)
     {
-        if (property_exists($this, $config->name)) {
-            $this->{$config->name} = $config->value;
+        if (property_exists($this, $config->getName())) {
+            $this->{$config->getName()} = $config->getValue();
         }
     }
 }
